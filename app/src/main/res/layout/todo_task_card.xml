@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="105dp">
+    <!-- XML Code illustrating card layout usage. -->
+    <!-- this code was taken from https://shorturl.at/xyHP6 then changed -->
+
+    <TextView
+        android:id="@+id/todoTask"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:maxLines="1"
+        android:text="Test task "
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- coments forself add image here later  -->
+    <ImageView
+        android:id="@+id/taskPic"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/todoTask"
+        app:tint="#808080"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/baseline_schedule_black_36dp"/>
+
+    <TextView
+        android:id="@+id/taskDuedate"
+        android:layout_toEndOf="@+id/taskPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todoTask"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="May 23, 2015"
+        android:textSize="16sp"/>
+
+    <!-- coments forself add image here later  -->
+    <ImageView
+        android:id="@+id/taskCmtpic"
+        android:layout_width="22dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/taskDuedate"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/baseline_school_black_36dp"
+        app:tint="#808080" />
+
+    <TextView
+        android:id="@+id/taskCmt"
+        android:layout_toEndOf="@+id/taskCmtpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taskDuedate"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="Task Coment"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/border2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="#808080"/>
+
+
+</RelativeLayout>
