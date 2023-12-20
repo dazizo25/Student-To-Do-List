@@ -28,7 +28,6 @@
         app:tint="#808080"
         android:layout_marginStart="20dp"
         android:layout_marginTop="7dp"
-        app:srcCompat="@drawable/baseline_schedule_black_36dp"/>
 
     <TextView
         android:id="@+id/taskDuedate"
@@ -51,7 +50,6 @@
         android:layout_below="@+id/taskDuedate"
         android:layout_marginStart="20dp"
         android:layout_marginTop="7dp"
-        app:srcCompat="@drawable/baseline_school_black_36dp"
         app:tint="#808080" />
 
     <TextView
